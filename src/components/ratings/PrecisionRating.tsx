@@ -3,7 +3,7 @@ import { ChangeEvent, useState } from 'react';
 
 const PrecisionRating = () => {
   const [value, setValue] = useState<number | null>(null);
-  const handleChange = (_e: ChangeEvent<{}>, newValue: number | null) => setValue(newValue);
+  const handleChange = (_e: ChangeEvent<unknown>, newValue: number | null) => setValue(newValue);
 
   return (
     <div>

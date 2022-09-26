@@ -1,9 +1,138 @@
 body {
+  margin: 0;
+  padding: 0;
+  background-color: #cec4fd;
   font-family: 'Open Sans', sans-serif;
+}
+
+.app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   padding: 4rem;
+  text-align: center;
+}
+
+@media screen and (min-width:1500px) {
+  .tab-active {
+    position: absolute;
+    background-color: #cec4fd50;
+    border-radius: 4px;
+    width: 200px;
+    height: 36px;
+    transition: transform 300ms ease-in-out;
+    -webkit-transition: transform 300ms ease-in-out;
+    -moz-transition: transform 300ms ease-in-out;
+    -ms-transition: transform 300ms ease-in-out;
+    -o-transition: transform 300ms ease-in-out;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+  }
+
+  #tab-0[aria-current="page"]~.tab-active {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+
+  #tab-1[aria-current="page"]~.tab-active {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+  }
+
+  #tab-2[aria-current="page"]~.tab-active {
+    transform: translateX(200%);
+    -webkit-transform: translateX(200%);
+    -moz-transform: translateX(200%);
+    -ms-transform: translateX(200%);
+    -o-transform: translateX(200%);
+  }
+
+  #tab-3[aria-current="page"]~.tab-active {
+    transform: translateX(300%);
+    -webkit-transform: translateX(300%);
+    -moz-transform: translateX(300%);
+    -ms-transform: translateX(300%);
+    -o-transform: translateX(300%);
+  }
+
+  #tab-4[aria-current="page"]~.tab-active {
+    transform: translateX(400%);
+    -webkit-transform: translateX(400%);
+    -moz-transform: translateX(400%);
+    -ms-transform: translateX(400%);
+    -o-transform: translateX(400%);
+  }
+
+  #tab-5[aria-current="page"]~.tab-active {
+    transform: translateX(500%);
+    -webkit-transform: translateX(500%);
+    -moz-transform: translateX(500%);
+    -ms-transform: translateX(500%);
+    -o-transform: translateX(500%);
+  }
+
+  #tab-6[aria-current="page"]~.tab-active {
+    transform: translate(0, 100%);
+    -webkit-transform: translate(0, 100%);
+    -moz-transform: translate(0, 100%);
+    -ms-transform: translate(0, 100%);
+    -o-transform: translate(0, 100%);
+  }
+
+  #tab-7[aria-current="page"]~.tab-active {
+    transform: translate(100%, 100%);
+    -webkit-transform: translate(100%, 100%);
+    -moz-transform: translate(100%, 100%);
+    -ms-transform: translate(100%, 100%);
+    -o-transform: translate(100%, 100%);
+  }
+
+  #tab-8[aria-current="page"]~.tab-active {
+    transform: translate(200%, 100%);
+    -webkit-transform: translate(200%, 100%);
+    -moz-transform: translate(200%, 100%);
+    -ms-transform: translate(200%, 100%);
+    -o-transform: translate(200%, 100%);
+  }
+
+  #tab-9[aria-current="page"]~.tab-active {
+    transform: translate(300%, 100%);
+    -webkit-transform: translate(300%, 100%);
+    -moz-transform: translate(300%, 100%);
+    -ms-transform: translate(300%, 100%);
+    -o-transform: translate(300%, 100%);
+  }
+
+  #tab-10[aria-current="page"]~.tab-active {
+    transform: translate(400%, 100%);
+    -webkit-transform: translate(400%, 100%);
+    -moz-transform: translate(400%, 100%);
+    -ms-transform: translate(400%, 100%);
+    -o-transform: translate(400%, 100%);
+  }
+
+  #tab-11[aria-current="page"]~.tab-active {
+    transform: translate(500%, 100%);
+    -webkit-transform: translate(500%, 100%);
+    -moz-transform: translate(500%, 100%);
+    -ms-transform: translate(500%, 100%);
+    -o-transform: translate(500%, 100%);
+  }
+
+  #tab-12[aria-current="page"]~.tab-active {
+    transform: translate(0, 200%);
+    -webkit-transform: translate(0, 200%);
+    -moz-transform: translate(0, 200%);
+    -ms-transform: translate(0, 200%);
+    -o-transform: translate(0, 200%);
+  }
 }

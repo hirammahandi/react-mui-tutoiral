@@ -79,7 +79,7 @@ export default function MultipleSelectChip() {
                   label={value}
                   clickable
                   deleteIcon={<Cancel onMouseDown={(event) => event.stopPropagation()} />}
-                  onDelete={(e) => setPersonName(personName.filter((name) => name !== value))}
+                  onDelete={() => setPersonName(personName.filter((name) => name !== value))}
                 />
               ))}
             </Box>
